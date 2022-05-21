@@ -11,5 +11,5 @@ declare global {
 }
 
 export default {
-    SHOPIFYURL : config.shopify_url ?? '',
+    SHOPIFY_URL : config.shopify_url ?? '',
     };

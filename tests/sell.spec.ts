@@ -3,7 +3,7 @@ import endpoint from "./configTypes"
 
 
 test("Have 4 options of selling", async ({ page }) => {
-  await page.goto(endpoint.SHOPIFYURL);
+  await page.goto(endpoint.SHOPIFY_URL);
   await page.locator('div > [data-trekkie-action="Sell Nav"]').click()
   await page.locator('ul[class="popover__list"] > li > [data-trekkie-action="Sell everywhere"]').click()
   await page.waitForLoadState('networkidle');
